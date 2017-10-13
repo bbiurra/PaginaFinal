@@ -1,0 +1,210 @@
+body {
+      position: relative; 
+  }
+  #inicio {
+      padding-top:50px;
+      height:400px;
+      margin-top: 55px;
+      width: 100%;
+      color: black;
+      background-color: white;
+}
+  
+  #imagenes {
+      padding-top:50px;
+      height:800px; 
+      width: 100%; 
+      color: white; 
+      background-color: black;
+}
+  #informacion {
+      padding-top:50px;
+      height:800px; 
+      width: 100%; 
+      color: black; 
+      background-color: white;
+}
+
+  #entrevistas {
+    padding-top:50px;
+      height:800px; 
+      width: 100%; 
+      color: white; 
+      background-color: black;
+}
+  #conceptos {
+      padding-top:50px;
+      height:800px; 
+      width: 100%; 
+      color: black; 
+      background-color: white;
+}
+  #cv {
+      padding-top:50px;
+      height:800px; 
+      width: 100%; 
+      color: white; 
+      background-color: black;
+}
+  #otros {
+      padding-top:50px;
+      height:800px; 
+      width: 100%; 
+      color: black; 
+      background-color: white;
+}
+  #beta {
+      padding-top:50px;
+      height:800px; 
+      width: 100%; 
+      color: white; 
+      background-color: black;
+}
+
+/* Estilo de separador (posible uso)
+.separador {
+    width: 100%;
+    height: 20px;
+    background-color: rgba 0 0 0 0.5;
+}*/
+
+.jumbotron {
+    background: rgba (255, 55, 255, 0.5);
+}
+
+.imgcarro {
+    border-radius: 100px;
+}
+
+#texto1 {
+    margin: 5%;
+    margin-top: 2%;
+    font-size: 24px;
+    border: 4px solid white;
+    padding: 10px;
+}
+
+#texto2 {
+    margin: 5%;
+    margin-top: 2%;
+    font-size: 24px;
+    border: 4px solid white;
+    padding: 10px;
+}
+
+.barrabtns {
+    text-align: center;
+    width: auto;
+}
+.btnsvariados {
+  width: 200px;
+  border-radius: 15px;
+  margin-right: 5px;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+
+.btnsvariados:hover, .btnsvariados:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+#btndesa, #btncomp {
+    width: 250px;
+}
+#btndesa:hover, #btndesa:active, #btncomp:hover, #btncomp:active {
+    background-color: black; /*fallback*/
+    background-color: rgba (0, 0, 0, 0.4);
+    color: white;
+}
+
+#web {
+    margin-top: 15px;
+    width: 100%;
+}
+
+#conceptweb1 {
+    width: 20%;
+    float: left;
+}
+.conceptos {
+    list-style:none;
+    width: 100%;
+    border: solid 3px;
+    border-radius: 8px;
+    
+}
+.conceptos li {
+    margin: 20px 5px 20px 5px;
+}
+
+.conceptosbtns {
+    height: 35px;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding: 0px 0px 15px 0px;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: black;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+
+.coneptosbtns input:hover, input:active {
+    background-color: black; /*fallback*/
+    background-color: rgba (0, 0, 0, 0.4);
+    color: white;
+    
+}
+
+.textoconceptos {
+    float: left;
+    margin-left: 20px;
+    border: solid 3px;
+    border-radius: 8px;
+    width: 78%;
+    height: 578px;
+}
+.textoconceptos h1, p {
+    text-align: center;
+    padding: 30px;
+}
+
+.textoconceptos h1{
+        font-size: 70px;
+        text-decoration-line: underline
+}
+
+.textoconceptos p{
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+#competencias {
+    margin-top: 15px;
+    width: 100%;
+}
+#conceptcomp1 {
+    width: 20%;
+    float: right;
+}
+
+.concepttr {
+    
+}
