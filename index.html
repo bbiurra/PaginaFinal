@@ -39,7 +39,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
          <a class="dropdown-item" href="#entrevistas">Entrevistas</a>
           <a class="dropdown-item" href="#conceptos">Conceptos</a>
-          <a class="dropdown-item" href="#cv" style="display:none;">Curriculum Vitae</a>
+          <a class="dropdown-item" href="#busquedaLaboral">Búsqueda Laboral</a>
           <a class="dropdown-item" href="#otros" style="display:none;">otros</a>
         </div>
       </li>
@@ -49,15 +49,25 @@
   
   
    
-   <div id="inicio" class="container-fluid">
-  <div class="jumbotron">
-  <div class="container">
-    <h1 class="display-3">Bruno Biurra Project</h1> 
-    <p class="lead">Welcome to the final project of Jóvenes a Programar course.</p>
-     
+   <div id="jumbo" class="jumbotron jumbotron-fluid">
+        <div id="textvideo"class="container">
+             <h1 class="display-3">Bienvenidos</h1>
+                <p class="lead">"Daría la mitad de lo que sé por la mitad de lo que ignoro."</p>
+        </div>
+            <video id="video-background" preload muted autoplay loop>	
+                <source src="video/" type="video/mp4">
+            </video>
+    </div>
+
+   <!--<div id="inicio" class="container-fluid">
+      <div class="jumbotron">
+         <div class="container">
+                
+            <h1 class="display-3">Young people to programming</h1>
+            <p class="lead">Welcome to the final project of the course. My name is Bruno Biurra and you can see here a small example of everything we worked on in the year.</p>
       </div> 
   </div>
-</div>
+</div>-->
   
  <div class="separador"></div>
 
@@ -96,9 +106,20 @@
 </div>
 
 <div id="informacion" class="container-fluid">
-  <h1>Información</h1>
-  <p>Contenido de información personal (en construcción).</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam velit quae doloremque labore obcaecati delectus omnis dicta itaque. Ullam vel magnam dolore ut aliquid impedit explicabo eveniet ducimus animi similique.</p>
+  <h1 style="widht:100%; text-align:center;">Información</h1>
+  
+    <a href="pdf/cv_completo.pdf" id ="btncv" title="Haga click para abrir el Currículum Vitae" class="btnsvariados" style="margin-left: 43%; margin-top: 10px;" target="_blank">Currículum Vitae</a>
+    <br>
+    
+    <img src="images/Foto%20perfil.jpg" alt="Foto de perfil" width="150px" style="border-radius: 900px; margin-left: 45%; margin-top: 10px;">
+    <br>
+    <div id="textoinfo">
+      <p>Mi nombre es Bruno Biurra, tengo 27 años y soy de la ciudad de Montevideo, Uruguay. </p>
+      <p>Actualmente soy estudiante del programa Jóvenes a Programar de Plan Ceibal, anteriormente realicé cursos de reparación pc y redes en Bios y Macrosoft, así como también cursos de diseño gráfico y web en este último instituto.</p>
+       <p>Mi experiencia laboral me ha llevado desde atención al cliente hasta soporte informático de un canal de televisión web.</p>
+        
+    </div>
+  
 </div>
 
  <div id="entrevistas" class="container-fluid">
@@ -106,13 +127,15 @@
   <div class="barrabtns">
       <input id="btnrita" class="btnsvariados" type="button" value="Entrevista a Rita" onclick="mostrar()">
       <input id="btnseba" class="btnsvariados" type="button" value="Entrevista a Sebastián" onclick="Mostrar()">
+      <input id="btncoito" class="btnsvariados" type="button" value="Entrevista a Coito" onclick="MostrarC()">
+      <input id="btnfernandez" class="btnsvariados" type="button" value="Entrevista a Fernández" onclick="MostrarF()">
   </div>
    
-   <div id="texto1" style="diplay:none">
+   <div id="texto1" style="display:none">
    <ul>
        <li>
           <cite>
-               “La competencia más requerida en los ámbitos laborales actualmente es el trabajo en equipo, la misma es         fundamental para poder llevar a cabo un buen trabajo.”
+               “La competencia más requerida en los ámbitos laborales actualmente es el trabajo en equipo, la misma es fundamental para poder llevar a cabo un buen trabajo.”
            </cite>
        </li>
        <br>
@@ -168,6 +191,65 @@
           </li>
       </ul>
   </div>
+  <div id="texto3" style="display:none">
+   <ul>
+       <li>
+          <cite>
+               “El éxito está dado en los objetivos que uno se haya planteado y como haya hecho ese recorrido hasta el momento que culminó esa experiencia.”
+           </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “Dos pilares fundamentales: La motivación y el esfuerzo.”
+           </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “El fracaso, al margen de que es un poco doloroso en ese momento, enseña y es un motivo de crecimiento muy grande.”
+               </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “La presión es un privilegio que nos da la vida, es una oportunidad que tenemos para nosotros poder concretar y desafiarnos a nosotros mismos.”
+            </cite>
+       </li>
+       <li>
+          <cite>
+               “Tolerancia a la frustración.”
+            </cite>
+       </li>
+   </ul>
+  </div>
+  <div id="texto4" style="display:none">
+   <ul>
+       <li>
+          <cite>
+               “La competencia más requerida en los ámbitos laborales actualmente es el trabajo en equipo, la misma es fundamental para poder llevar a cabo un buen trabajo.”
+           </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+                “Siempre se recomienda ir a la entrevista decidido y convencido de que el puesto va a ser de uno, hay que ser natural y venderle al posible futuro empleador lo que uno es realmente y que sus aptitudes y estudios, muchas veces pueden no estar dentro de lo que ellos solicitan, pero que tenemos mucho más que ofrecer y podemos cubrir las necesidades de dicho cargo.”
+           </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “De las malas experiencias se debe aprender para no repetir el mismo error en otro trabajo.”
+               </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “Desde el punto de vista de la empresa, la entrevista laboral es la forma de conseguir la información directa y auténtica sobre la trayectoria profesional y la personalidad del candidato para saber si el mismo es capaz de cubrir las necesidades de la empresa para el puesto ofrecido. Para el candidato, es la forma de demostrar que tiene las competencias técnicas y blandas necesarias para poder cubrir el puesto ofrecido.”
+            </cite>
+       </li>
+   </ul>
+  </div>
 </div>
 
 <div id="conceptos" class="container-fluid">
@@ -180,7 +262,7 @@
       <div id="conceptweb1">
           <ul class="conceptos">
               <li>
-                  <input class="conceptosbtns" type="button" value="Desarrollador web" onclick="aparece()">
+                  <input id="botones" class="conceptosbtns" type="button" value="Desarrollador web" onclick="aparece()">
               </li>
               <li>
                   <input class="conceptosbtns" type="button" value="Diseñador web" onclick="aparece1()">
@@ -217,43 +299,43 @@
       -->
      </div>
     </div>
-     <div id="botones" class="textoconceptos" style="display:none;">
+     <div id="desarrolladorweb" class="textoconceptos" style="display: none;">
               <h1>Desarrollador Web</h1>
               <p>Es la persona que se encarga de realizar una página web, tanto en funcionalidad como en aspecto.</p>
           </div>
-      <div id="botones1" class="textoconceptos" style="display:none;">
+      <div id="disenadorweb" class="textoconceptos oculto" style="display: none;">
               <h1>Diseñador web</h1>
               <p>Se encarga de dar forma a la página web y diagramarla, luego le transmitirá ese diagrama al desarrollador para que lo lleve a cabo.</p>
           </div>
-      <div id="botones2" class="textoconceptos" style="display:none;">
+      <div id="progcompu" class="textoconceptos oculto" style="display: none;">
               <h1>Programa de computadora</h1>
               <p>Son instrucciones que se le dan a una computadora para que las ejecute.</p>
           </div>
-      <div id="botones3" class="textoconceptos" style="display:none;">
+      <div id="algoritmo" class="textoconceptos oculto" style="display: none;">
               <h1>Algoritmo</h1>
               <p>Son instrucciones que se siguen para resolver un problema.</p>
           </div>
-      <div id="botones4" class="textoconceptos" style="display:none;">
+      <div id="lengprogra" class="textoconceptos oculto" style="display: none;">
               <h1>Lenguaje de programación</h1>
               <p>Es un lenguaje creado con la capacidad de describir acciones y que una computadora lo pueda interpretar y ejecutar.</p>
           </div>
-      <div id="botones5" class="textoconceptos" style="display:none;">
+      <div id="lengaltonivel" class="textoconceptos oculto" style="display: none;">
               <h1>Lenguaje de alto nivel</h1>
               <p>Este tipo de lenguaje se acerca al lenguaje humano, la computadora debe traducirlo a un lenguaje de bajo nivel. Algunos lenguajes de alto nivel son JavaScript, PHP, SQL, etc.</p>
       </div>
-      <div id="botones6" class="textoconceptos" style="display:none;">
+      <div id="lengbajonivel" class="textoconceptos oculto" style="display: none;">
               <h1>Lenguaje de bajo nivel</h1>
               <p>Este tipo de lenguaje se acerca a la computadora, es más difícil para aprenderlo y corregir errores.</p>
       </div>
-      <div id="botones7" class="textoconceptos" style="display:none;">
+      <div id="html" class="textoconceptos oculto" style="display: none;">
               <h1>HTML</h1>
               <p>Son una serie de etiquetas utilizadas para crear una página web.</p>
       </div>
-      <div id="botones8" class="textoconceptos" style="display:none;">
+      <div id="css" class="textoconceptos oculto" style="display: none;">
               <h1>CSS</h1>
               <p>Son una serie de etiquetas utilizadas para darle forma, color y efectos a una página web.</p>
       </div>
-      <div id="botones9" class="textoconceptos" style="display:none;">
+      <div id="javascript" class="textoconceptos oculto" style="display: none;">
               <h1>JavaScript</h1>
               <p>Es un lenguaje de programación que se usa para darle funcionalidad a la página web.</p>
       </div>
@@ -264,16 +346,16 @@
       <div id="conceptcomp1">
       <ul class="conceptos">
               <li>
-                  <input class="conceptosbtns" type="button" value="Competencias transversales" onclick="">
+                  <input class="conceptosbtns" type="button" value="Competencias transversales" style="font-size:15px;" onclick="aparece10()">
               </li>
               <li>
-                  <input class="conceptosbtns" type="button" value="Competencias y habilidades" onclick="">
+                  <input class="conceptosbtns" type="button" value="Competencias y habilidades" style="font-size:15px;" onclick="aparece11()">
               </li>
               <li>
-                  <input class="conceptosbtns" type="button" value="Competencias necesarias" onclick="">
+                  <input class="conceptosbtns" type="button" value="Competencias necesarias" style="font-size:15px;" onclick="aparece12()">
               </li>
               <li>
-                  <input class="conceptosbtns" type="button" value="Vocación" style="font-size:15px;" onclick="">
+                  <input class="conceptosbtns" type="button" value="Vocación" style="font-size:15px;" onclick="aparece13()">
               </li>
           </ul>
         </div>
@@ -281,15 +363,67 @@
           <div id="conceptcomp2" class="concepts"></div>
       -->
      </div>
+      <div id="compconcpt1" class="textoconceptos" style="display: none;">
+              <h1>Competencias transversales</h1>
+              <p>Son un conjunto de competencias clave que sirven para una profesión, tanto sean conocimientos, aplicación de esos conocimientos y destrezas, relacionamiento interpersonal y aprendizajes cotidianos.
+              </p>
+      </div>
+      <div id="compconcpt2" class="textoconceptos" style="display: none">
+              <h1>Competencias y habilidades</h1>
+              <p>Competencia: Es la capacidad de una persona, en la misma influyen las habilidades, conocimientos, valores y enseñanzas adquiridas a lo largo de la vida.
+              <br><br>
+              Habilidad: Es la facilidad que tenemos para aprender o hacer algo.
+              </p>
+      </div>
+      <div id="compconcpt3" class="textoconceptos" style="display: none;">
+              <h1>Competencias necesarias</h1>
+              <p><u>Estudio:</u> La formación nos da la posibilidad de incrementar nuestros conocimientos y poder expandir nuestro campo laboral.    <br>
+              <u>Constancia:</u> Ser constantes en nuestra objetivo, sea laboral o personal, la constancia nos llevará al éxito.<br>
+              <u>Humildad:</u> No creerse más que los demás, siempre mantener un perfil bajo tanto en nuestro carácter como de nuestros conocimientos.<br>
+              <u>Compañerismo:</u> Ayudar y permitir ser ayudado por tu grupo de trabajo, es la mejor forma de crecer personalmente y laboralmente.<br>
+              <u>Motivación:</u> Siempre estar motivado con lo que uno realiza, la desmotivación podría llegarnos a hacer perder el interés en lo que hacemos.<br>
+              <u>Compromiso:</u> Si aceptamos una tarea o reto, no abandonarla, continuar hasta finalizarla.<br>
+              <u>Respeto:</u> La base fundamental en todo lo que hagamos en nuestra vida, el respeto hacia los demás hará que los demás sigan esta consigna con nosotros y mantengamos la cordialidad.
+              </p>
+      </div>
+      <div id="compconcpt4" class="textoconceptos" style="display: none">
+              <h1>Vocación</h1>
+              <p>La vocación es eso que nos resulta inspirador y queremos realizar. Implica en descubrir el camino hacia dónde quiero ir, en este caso la profesión que quiero seguir. Mi vocación la estoy construyendo en la base de lo que me gusta que es la informática y a medida que me voy capacitando voy descubriendo realmente el rumbo que quiero seguir. 
+              </p>
+      </div>
 </div>
 
+
+<div id="busquedaLaboral" class="container-fluid">
+  <h1>Búsqueda Laboral</h1>
+  <a href="images/desarrollador-web.png" target="_blank">
+      <img src="images/desarrollador-web.png" alt="Aviso de Trabajo" title="Haga click para ver en tamaño completo" width="35%" style="float: left; margin: 15px;">
+  </a>
+  <div id="textoLaboral">
+      <p >Los avisos laborales se componen en distintas secciones, lo cual facilita la lectura a la persona que está buscando trabajo. <br>
+
+         Comenzamos por los lugares donde podemos ubicar estos avisos, los mismos pueden ser publicados en Páginas Web, Diarios, Consultoras, Carteleras en instituciones educativas, trabajos, etc., Llamados y Bolsas de trabajo. <br><br>
+
+         Dichos avisos, en su estructura se componen en:
+         <ul>
+             <li>
+                 El nombre de la empresa o consultora: Muchas veces no es la empresa directamente quién realiza el aviso, sino una consultora que se encarga de reclutar al personal. Por este motivo muchas veces puede figurar o no el nombre de la empresa que requiere el personal.
+             </li>
+             <li>
+                 Ubicación: La ubicación donde será el puesto a ocupar.
+             </li>
+             <li>
+                 Descripción del trabajo: Encontramos los conocimientos, la experiencia, habilidades y horario que solicita el empleador para poder cubrir el cargo.  En algunos casos también encontramos el salario que ofrece el empleador, en otras ocasiones el empleador solicita la aspiración salarial del candidato.
+             </li>
+             <li>
+                 Envío de cv: Dependiendo el medio dónde se publicó es la información que contendrá para poder enviar el cv, normalmente en los sitios web uno se registra con todos sus datos y directamente se postula en el aviso. En diarios, carteleras y demás se estila a usar una dirección de mail de recepción de los cv, pero también puede ser una dirección física donde enviar el cv personalmente.
+             </li>
+         </ul>    
+    </p>
+        
+    </div>
+</div>
 <!--
-<div id="cv" class="container-fluid" style="display:none;">
-  <h1>Section 4 Submenu 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-
 <div id="otros" class="container-fluid" style="display:none;">
   <h1>Section 4 Submenu 2</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>

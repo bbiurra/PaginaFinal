@@ -1,5 +1,14 @@
+// Botón Cv
+
+function openPDF(file){ windows.open(file,'resizable,scrollbars');}
+
+//Botones sección entrevistas
+
 var clic1 = document.getElementById("texto1");
 var clic2 = document.getElementById("texto2");
+var clic3 = document.getElementById("texto3");
+var clic4 = document.getElementById("texto4");
+
 
 function mostrar(){
     if(clic1.style.display == "block"){
@@ -17,7 +26,24 @@ function Mostrar(){
     }
 }
 
+function MostrarC(){
+    if(clic3.style.display == "block"){
+        clic3.style.display = "none";
+    } else {
+        clic3.style.display = "block";
+    }
+}
+
+function MostrarF(){
+    if(clic4.style.display == "block"){
+        clic4.style.display = "none";
+    } else {
+        clic4.style.display = "block";
+    }
+}
+
 /*Botón desarrollo web*/
+
 var desarrollo = document.getElementById("web");
 
 function mostrarweb(){
@@ -29,7 +55,26 @@ function mostrarweb(){
 }
 
 /*Botones de menú de Desarrollo Web*/
-var botones = document.getElementById("botones");
+
+
+/*
+$('.conceptosbtns').click(function(){
+    $('.textoconceptos.visible').addClass('oculto');
+    $('.textoconceptos.visible').removeClass('visible');
+    var valor = $(this).value();
+    
+    if ($('#disenadorweb')){
+        $('.textoconceptos.visible').addClass('visible');
+        $('.textoconceptos.visible').removeClass('oculto');
+    }else {
+        $('.textoconceptos.visible').addClass('oculto');
+        $('.textoconceptos.visible').removeClass('visible');
+    }
+        
+    
+});
+*/
+var botones = document.getElementById("desarrolladorweb");
 
 function aparece(){
     if (botones.style.display == "block"){
@@ -39,17 +84,18 @@ function aparece(){
     }
 }
 
-var botones1 = document.getElementById("botones1");
+var botones1 = document.getElementById("disenadorweb");
 
 function aparece1(){
-    if (botones1.style.display == "block"){
-        botones1.style.display = "none";
-    } else {
+    if (botones1.style.display == "none"){
         botones1.style.display = "block";
+        botones2.style.display = "none";
+    } else {
+        botones1.style.display = "none";
     }
 }
 
-var botones2 = document.getElementById("botones2");
+var botones2 = document.getElementById("progcompu");
 
 function aparece2(){
     if (botones2.style.display == "block"){
@@ -58,7 +104,7 @@ function aparece2(){
         botones2.style.display = "block";
     }
 }
-var botones3 = document.getElementById("botones3");
+var botones3 = document.getElementById("algoritmo");
 
 function aparece3(){
     if (botones3.style.display == "block"){
@@ -68,7 +114,7 @@ function aparece3(){
     }
 }
 
-var botones4 = document.getElementById("botones4");
+var botones4 = document.getElementById("lengprogra");
 
 function aparece4(){
     if (botones4.style.display == "block"){
@@ -77,7 +123,7 @@ function aparece4(){
         botones4.style.display = "block";
     }
 }
-var botones5 = document.getElementById("botones5");
+var botones5 = document.getElementById("lengaltonivel");
 
 function aparece5(){
     if (botones5.style.display == "block"){
@@ -86,7 +132,7 @@ function aparece5(){
         botones5.style.display = "block";
     }
 }
-var botones6 = document.getElementById("botones6");
+var botones6 = document.getElementById("lengbajonivel");
 
 function aparece6(){
     if (botones6.style.display == "block"){
@@ -95,7 +141,7 @@ function aparece6(){
         botones6.style.display = "block";
     }
 }
-var botones7 = document.getElementById("botones7");
+var botones7 = document.getElementById("html");
 
 function aparece7(){
     if (botones7.style.display == "block"){
@@ -104,7 +150,7 @@ function aparece7(){
         botones7.style.display = "block";
     }
 }
-var botones8 = document.getElementById("botones8");
+var botones8 = document.getElementById("css");
 
 function aparece8(){
     if (botones8.style.display == "block"){
@@ -113,7 +159,7 @@ function aparece8(){
         botones8.style.display = "block";
     }
 }
-var botones9 = document.getElementById("botones9");
+var botones9 = document.getElementById("javascript");
 
 function aparece9(){
     if (botones9.style.display == "block"){
@@ -124,6 +170,7 @@ function aparece9(){
 }
 
 /*Botón Competencias Transversales*/
+
 var compet = document.getElementById("competencias");
 
 function mostrarcompetencias(){
@@ -133,4 +180,58 @@ function mostrarcompetencias(){
         compet.style.display = "block";
     }
 }
+var botones10 = document.getElementById("compconcpt1");
 
+function aparece10(){
+    if (botones10.style.display == "block"){
+        botones10.style.display = "none";
+    } else {
+        botones10.style.display = "block";
+    }
+}
+
+var botones11 = document.getElementById("compconcpt2");
+
+function aparece11(){
+    if (botones11.style.display == "block"){
+        botones11.style.display = "none";
+    } else {
+        botones11.style.display = "block";
+    }
+}
+var botones12 = document.getElementById("compconcpt3");
+
+function aparece12(){
+    if (botones12.style.display == "block"){
+        botones12.style.display = "none";
+    } else {
+        botones12.style.display = "block";
+    }
+}
+var botones13 = document.getElementById("compconcpt4");
+
+function aparece13(){
+    if (botones13.style.display == "block"){
+        botones13.style.display = "none";
+    } else {
+        botones13.style.display = "block";
+    }
+}
+
+
+/*
+$(document).ready(function() {
+    $("input[type=button]").click(function(event){
+        var valor = $(event.target).val();
+        if(valor == "Competencias transversales"){
+            $("#compconcpt1").show();
+            $("#compconcpt2").hide();
+        } else if (valor == "Desarrollo Web") {
+            $("#compconcpt1").hide();
+            $("#compconcpt2").show();
+        }
+            // Otra cosa
+        }
+    });
+});
+*/

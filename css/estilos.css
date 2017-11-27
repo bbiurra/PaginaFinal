@@ -1,9 +1,9 @@
 body {
       position: relative; 
   }
-  #inicio {
+  #jumbo {
       padding-top:50px;
-      height:400px;
+      height:600px;
       margin-top: 55px;
       width: 100%;
       color: black;
@@ -39,7 +39,7 @@ body {
       color: black; 
       background-color: white;
 }
-  #cv {
+  #busquedaLaboral {
       padding-top:50px;
       height:800px; 
       width: 100%; 
@@ -91,6 +91,20 @@ body {
     border: 4px solid white;
     padding: 10px;
 }
+#texto3 {
+    margin: 5%;
+    margin-top: 2%;
+    font-size: 24px;
+    border: 4px solid white;
+    padding: 10px;
+}
+#texto4 {
+    margin: 5%;
+    margin-top: 2%;
+    font-size: 24px;
+    border: 4px solid white;
+    padding: 10px;
+}
 
 .barrabtns {
     text-align: center;
@@ -124,6 +138,29 @@ body {
     width: 250px;
 }
 #btndesa:hover, #btndesa:active, #btncomp:hover, #btncomp:active {
+    background-color: black; /*fallback*/
+    background-color: rgba (0, 0, 0, 0.4);
+    color: white;
+}
+
+#btncv{
+  width: 200px;
+  border-radius: 15px;
+  margin-right: 5px;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+    background-color: grey;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+
+
+#btncv:hover, #btncv:active, #btncv:hover, #btncv:active {
     background-color: black; /*fallback*/
     background-color: rgba (0, 0, 0, 0.4);
     color: white;
@@ -166,7 +203,7 @@ body {
               border-color 0.2s ease-out;
 }
 
-.coneptosbtns input:hover, input:active {
+.coneptosbtns input:hover, input:active, button:hover, button:active {
     background-color: black; /*fallback*/
     background-color: rgba (0, 0, 0, 0.4);
     color: white;
@@ -181,6 +218,15 @@ body {
     width: 78%;
     height: 578px;
 }
+/*
+.textoconceptos.oculto{
+    display:none;
+}
+
+.textoconceptos.visible{
+    display:block;
+}*/
+
 .textoconceptos h1, p {
     text-align: center;
     padding: 30px;
@@ -204,7 +250,56 @@ body {
     width: 20%;
     float: right;
 }
+#compconcpt3 p{
+    font-size: 20px;
+}
+#compconcpt4 p{
+    font-size: 32px;
+}
 
-.concepttr {
-    
+#textoinfo p{
+    font-size: 18px;
+}
+#textoinfo {
+    margin-left: 10%;
+    margin-top: 1%;
+    border: solid 3px;
+    border-radius: 8px;
+    width: 80%;
+    height: 400px;
+}
+
+#busquedaLaboral h1{
+    width: 100%;
+    text-align: center;
+}
+#textoLaboral {
+     margin-right: 5%;
+    margin-top: 1%;
+    border: solid 3px;
+    border-color: white;
+    border-radius: 8px;
+    width: 50%;
+    height: 87%;
+    float: right;
+    padding: 0px 30px 0px 0px;
+}
+#textoLaboral li{ 
+    padding: 5px 0px 5px 0px;
+}
+
+#video-background { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; 
+  width:100%;
+  z-index: -100;
+}
+.jumbotron {
+    z-index: -101;
+    position: relative;
+    overflow: hidden;
 }
