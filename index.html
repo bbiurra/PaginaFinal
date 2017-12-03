@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Página final</title>
-        <meta charset="utf-8">
-        <meta name="description" content="Página final">
-        <meta name="keywords" content="Página, Final, Bruno, Biurra, Entrega, Desarrollo, Diseño Web">
-        <meta name="author" content="Bruno Biurra">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    </head>
-    
-    
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        
-        
-                
+<html lang="es">
+  <head>
+    <title>Proyecto final JaP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+      
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+  
+  <section class="container-fluid">
       <nav id="barranav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-       <a class="navbar-brand" href="#">Bruno Biurra</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Bruno Biurra</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#imagenes">Imágenes</a>
@@ -40,73 +39,87 @@
          <a class="dropdown-item" href="#entrevistas">Entrevistas</a>
           <a class="dropdown-item" href="#conceptos">Conceptos</a>
           <a class="dropdown-item" href="#busquedaLaboral">Búsqueda Laboral</a>
-          <a class="dropdown-item" href="#otros" style="display:none;">otros</a>
+          <a class="dropdown-item" href="#contacto">Contacto</a>
         </div>
       </li>
+      <li class="nav-item ml-md-auto d-none d-md-flex">
+          
+      </li>
+      <li></li>
+    </ul>
+    
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item">
+        
+    </li>                        
+    <li class="nav-item">
+        
+        
+    </li>
     </ul>
   </div>
     </nav>
-  
-  
-   
-   <div id="jumbo" class="jumbotron jumbotron-fluid">
-        <div id="textvideo"class="container">
-             <h1 class="display-3">Bienvenidos</h1>
-                <p class="lead">"Daría la mitad de lo que sé por la mitad de lo que ignoro."</p>
+ </section>
+ 
+ 
+  <div class="jumbotron">
+    <video id="video-background" preload muted autoplay loop>
+      <source src="videos/videobackground.mp4" type="video/mp4">
+    </video>
+    <div class="textjumbo container text-sm-left text-md-center text-lg-center text-xl-center">
+      <h1 id="welcome" class="">Welcome</h1>
+      <p id="textojumbo" class="">My name is Bruno Biurra, I'm 27 years old and live in Montevideo, Uruguay. <br><br>
+        Actually I'm a student of Plan Ceibal project called Jóvenes a Programar. <br><br>
+        
+        My work experience has led me to work in customer service positions to computer support of a web TV channel. <br><br>
+
+        My goals for 2018 in the professional, find a job again and if possible in a computer company. Personally, start the Digital Marketing course in April.
+    </p>
+    </div>
+  </div>
+
+    <div id="imagenes" class="container-fluid">
+      <div class="container">
+      <h2 style="widht:100%; text-align:center;">Imágenes</h2>
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 imgcarro" src="images/Camino%20al%20exito.jpg" alt="First slide">
         </div>
-            <video id="video-background" preload muted autoplay loop>	
-                <source src="video/" type="video/mp4">
-            </video>
+        <div class="carousel-item">
+          <img class="d-block w-100 imgcarro" src="images/Nube%20de%20palabras.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="imgcarro d-block w-100" src="images/foto%20personal.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="imgcarro d-block w-100" src="images/Infograf%C3%ADa%20laboral.png" alt="Fourth slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
     </div>
 
-   <!--<div id="inicio" class="container-fluid">
-      <div class="jumbotron">
-         <div class="container">
-                
-            <h1 class="display-3">Young people to programming</h1>
-            <p class="lead">Welcome to the final project of the course. My name is Bruno Biurra and you can see here a small example of everything we worked on in the year.</p>
-      </div> 
-  </div>
-</div>-->
-  
- <div class="separador"></div>
-
- <div id="imagenes" class="container-fluid">
-  <div class="container">
-  <h2 style="widht:100%; text-align:center;">Imágenes</h2>
-  <br>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100 imgcarro" src="images/Camino%20al%20exito.jpg" alt="First slide">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 imgcarro" src="images/Nube%20de%20palabras.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="imgcarro d-block w-100" src="images/foto%20personal.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
 
-</div>
-
-<div id="informacion" class="container-fluid">
-  <h1 style="widht:100%; text-align:center;">Información</h1>
+   <!------------------------ HASTA ACA FUNCIONA GENIAL ------------------->
+   
+    <div id="informacion" class="container-fluid">
+      <h1 style="widht:100%; text-align:center;">Información</h1>
   
     <a href="pdf/cv_completo.pdf" id ="btncv" title="Haga click para abrir el Currículum Vitae" class="btnsvariados" style="margin-left: 43%; margin-top: 10px;" target="_blank">Currículum Vitae</a>
     <br>
@@ -116,23 +129,38 @@
     <div id="textoinfo">
       <p>Mi nombre es Bruno Biurra, tengo 27 años y soy de la ciudad de Montevideo, Uruguay. </p>
       <p>Actualmente soy estudiante del programa Jóvenes a Programar de Plan Ceibal, anteriormente realicé cursos de reparación pc y redes en Bios y Macrosoft, así como también cursos de diseño gráfico y web en este último instituto.</p>
-       <p>Mi experiencia laboral me ha llevado desde atención al cliente hasta soporte informático de un canal de televisión web.</p>
+       <p>Mi experiencia laboral me ha llevado a trabajar en puestos de atención al cliente hasta soporte informático de un canal de televisión web.</p>
+       <p>Mis objetivos para 2018 en lo profesional, encontrar trabajo nuevamente y si es posible en una empresa de informática. En lo personal iniciar en Abril el curso de Márketing Digital. </p>
         
     </div>
   
-</div>
+    </div>
 
  <div id="entrevistas" class="container-fluid">
   <h1 style="text-align:center; margin-bottom: 25px">Entrevistas</h1>
-  <div class="barrabtns">
-      <input id="btnrita" class="btnsvariados" type="button" value="Entrevista a Rita" onclick="mostrar()">
-      <input id="btnseba" class="btnsvariados" type="button" value="Entrevista a Sebastián" onclick="Mostrar()">
-      <input id="btncoito" class="btnsvariados" type="button" value="Entrevista a Coito" onclick="MostrarC()">
-      <input id="btnfernandez" class="btnsvariados" type="button" value="Entrevista a Fernández" onclick="MostrarF()">
-  </div>
-   
-   <div id="texto1" style="display:none">
-   <ul>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="images/Fotos%20decks%20Gissel.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Rita Marquisio</h4>
+          <p class="card-text">Licenciada en Educación y Técnica en Educación para el Tiempo Libre y la Recreación.</p>
+          <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entrevistaRita">
+      Ver frases
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="entrevistaRita" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Entrevista a Rita Marquisio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
        <li>
           <cite>
                “La competencia más requerida en los ámbitos laborales actualmente es el trabajo en equipo, la misma es fundamental para poder llevar a cabo un buen trabajo.”
@@ -157,9 +185,35 @@
             </cite>
        </li>
    </ul>
-  </div>
-  <div id="texto2" style="display:none;">
-      <ul>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img class="card-img-top" src="images/Fotos%20decks%20Seba.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Sebastián Caggiano</h4>
+            <p class="card-text">Ingeniero de Computación egresado de la UdelaR.<br><br></p>
+          <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entrevistaSeba">
+      Ver frases
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="entrevistaSeba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Entrevista a Sebastián Caggiano</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <ul>
           <li>
               <cite>
                   “Lo más importante es la experiencia laboral, no solamente los estudios académicos.”
@@ -190,9 +244,35 @@
               </cite>
           </li>
       </ul>
-  </div>
-  <div id="texto3" style="display:none">
-   <ul>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img class="card-img-top" src="images/Fotos%20decks%20Fabian%20Coito.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Fabián Coito</h4>
+          <p class="card-text">Ex futbolista y actual entrenador de la Selección Sub-20 de Uruguay.<br></p>
+          <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entrevistaCoito">
+      Ver frases
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="entrevistaCoito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Entrevista a Fabián Coito</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <ul>
        <li>
           <cite>
                “El éxito está dado en los objetivos que uno se haya planteado y como haya hecho ese recorrido hasta el momento que culminó esa experiencia.”
@@ -216,213 +296,388 @@
                “La presión es un privilegio que nos da la vida, es una oportunidad que tenemos para nosotros poder concretar y desafiarnos a nosotros mismos.”
             </cite>
        </li>
+       <br>
        <li>
           <cite>
                “Tolerancia a la frustración.”
             </cite>
        </li>
    </ul>
-  </div>
-  <div id="texto4" style="display:none">
-   <ul>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    
+       <div class="card">
+        <img class="card-img-top" src="images/Fotos%20decks%20Santiago%20Fernandez.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Santiago Fernández</h4>
+          <p class="card-text">Analista en Administración de Empresas. Socio director, Orange Attitude. </p>
+          <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entrevistaFernandez">
+      Ver frases
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="entrevistaFernandez" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Entrevista a Santiago Fernández</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
        <li>
           <cite>
-               “La competencia más requerida en los ámbitos laborales actualmente es el trabajo en equipo, la misma es fundamental para poder llevar a cabo un buen trabajo.”
+               “Una vez que algo llega a digital, no se borra nunca.”
            </cite>
        </li>
        <br>
        <li>
           <cite>
-                “Siempre se recomienda ir a la entrevista decidido y convencido de que el puesto va a ser de uno, hay que ser natural y venderle al posible futuro empleador lo que uno es realmente y que sus aptitudes y estudios, muchas veces pueden no estar dentro de lo que ellos solicitan, pero que tenemos mucho más que ofrecer y podemos cubrir las necesidades de dicho cargo.”
+               “Hay que ser auténticos, hoy en día es imposible esconder algo que no somos.”
            </cite>
        </li>
        <br>
        <li>
           <cite>
-               “De las malas experiencias se debe aprender para no repetir el mismo error en otro trabajo.”
+               “Tenemos que saber qué información nuestra hay en el mundo digital.”
                </cite>
        </li>
        <br>
        <li>
           <cite>
-               “Desde el punto de vista de la empresa, la entrevista laboral es la forma de conseguir la información directa y auténtica sobre la trayectoria profesional y la personalidad del candidato para saber si el mismo es capaz de cubrir las necesidades de la empresa para el puesto ofrecido. Para el candidato, es la forma de demostrar que tiene las competencias técnicas y blandas necesarias para poder cubrir el puesto ofrecido.”
+               “Cuando dejemos de utilizar una red, debemos eliminar la cuenta.”
+            </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “Debemos revisar y optimizar las opciones de privacidad de nuestras redes.”
+            </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “Debemos recabar la mayor cantidad de información posible sobre la empresa a la que nos vamos a presentar.”
+            </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “Ser perseverantes y no dejarnos caer por una mala experiencia.”
+            </cite>
+       </li>
+       <br>
+       <li>
+          <cite>
+               “Tener actitud positiva y ganas de empuje, cuenta mucho más que la aptitud.”
             </cite>
        </li>
    </ul>
-  </div>
-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      
 
 <div id="conceptos" class="container-fluid">
   <h1 style="text-align:center; margin-bottom: 25px">Conceptos</h1>
-  <div class="barrabtns">
-      <input id="btndesa" class="btnsvariados" type="button" value="Desarrollo Web" onclick="mostrarweb()">
-      <input id="btncomp" class="btnsvariados" type="button" value="Competencias Transversales" onclick="mostrarcompetencias()">
-  </div>
-     <div id="web" style="display:none;">
-      <div id="conceptweb1">
-          <ul class="conceptos">
-              <li>
-                  <input id="botones" class="conceptosbtns" type="button" value="Desarrollador web" onclick="aparece()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Diseñador web" onclick="aparece1()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Programa de computadora" style="font-size:15px;" onclick="aparece2()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Algoritmo" onclick="aparece3()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Lenguaje de programación" style="font-size:15px;" onclick="aparece4()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Lenguaje de alto nivel" onclick="aparece5()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Lenguaje de bajo nivel" onclick="aparece6()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="HTML" onclick="aparece7()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="CSS" onclick="aparece8()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="JavaScript" onclick="aparece9()">
-              </li>
-          </ul>
+      <div class="card mb-3">
+          <img class="card-img-top" src="images/Conceptos%20Desarrollo%20Web%20texto.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text font-weight-bold">Es un término que define la creación de sitios web para Internet o una intranet. Para conseguirlo se hace uso de tecnologías de software del lado del servidor y del cliente que involucran una combinación de procesos de base de datos con el uso de un navegador web a fin de realizar determinadas tareas o mostrar información.</p>
+            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#desarrolloWeb">
+      Ver conceptos de Desarrollo Web
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="desarrolloWeb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Desarrollo Web</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
           
-          
-     <!-- Si se agregan más botones, hacer deslizante y agregar esta barra de botones
-          <div id="conceptweb2" class="concepts"></div> 
-      -->
-     </div>
+          <div class="modal-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3" src="images/desarrollador%20web.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Desarrollador Web</h5>
+                          Es la persona que se encarga de realizar una página web, tanto en funcionalidad como en aspecto.
+                    </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="images/disenador%20web.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Diseñador web</h5>
+                          Se encarga de dar forma a la página web y diagramarla, luego le transmitirá ese diagrama al desarrollador para que lo lleve a cabo.
+                    </div>
+              </li>
+              <li class="media">
+                <img class="mr-3" src="images/programa%20de%20computadora.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Programa de computadora</h5>
+                          Son instrucciones que se le dan a una computadora para que las ejecute.
+                    </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="images/algoritmo.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Algoritmo</h5>
+                          Son instrucciones que se siguen para resolver un problema.
+                    </div>
+              </li>
+              <li class="media">
+                <img class="mr-3" src="images/lenguaje%20de%20programacion.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Lenguaje de programación</h5>
+                          Es un lenguaje creado con la capacidad de describir acciones y que una computadora lo pueda interpretar y ejecutar.
+                    </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="images/lenguaje%20de%20alto%20nivel.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Lenguaje de alto nivel</h5>
+                          Este tipo de lenguaje se acerca al lenguaje humano, la computadora debe traducirlo a un lenguaje de bajo nivel. Algunos lenguajes de alto nivel son JavaScript, PHP, SQL, etc.
+                    </div>
+              </li>
+              <li class="media">
+                <img class="mr-3" src="images/lenguaje%20de%20bajo%20nivel.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Lenguaje de bajo nivel</h5>
+                          Este tipo de lenguaje se acerca a la computadora, es más difícil para aprenderlo y corregir errores.
+                    </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="images/html.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">HTML</h5>
+                          Son una serie de etiquetas utilizadas para crear una página web.
+                    </div>
+              </li>
+              <li class="media">
+                <img class="mr-3" src="images/css.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">CSS</h5>
+                          Son una serie de etiquetas utilizadas para darle forma, color y efectos a una página web.
+                    </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="images/js.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">JavaScript</h5>
+                          Es un lenguaje de programación que se usa para darle funcionalidad a la página web.
+                    </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-     <div id="desarrolladorweb" class="textoconceptos" style="display: none;">
-              <h1>Desarrollador Web</h1>
-              <p>Es la persona que se encarga de realizar una página web, tanto en funcionalidad como en aspecto.</p>
           </div>
-      <div id="disenadorweb" class="textoconceptos oculto" style="display: none;">
-              <h1>Diseñador web</h1>
-              <p>Se encarga de dar forma a la página web y diagramarla, luego le transmitirá ese diagrama al desarrollador para que lo lleve a cabo.</p>
+        </div>
+        
+        
+        <div class="card mb-3">
+         <img class="card-img-bottom" src="images/Conceptos%20comp2%20texto.png" alt="Conceptos Competencias Transversales">
+          <div class="card-body">
+            <p class="card-text font-weight-bold">Las competencias transversales son genéricas y comunes a cualquier profesión. Las mismas se relacionan y se visualizan en la práctica, donde se integran con las aptitudes, rasgos de la personalidad, conocimientos y valores que adquirimos a lo largo de la vida.</p>
+            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#competenciasTransversales">
+      Ver conceptos de Competencias Transversales
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="competenciasTransversales" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Competencias Transversales</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-      <div id="progcompu" class="textoconceptos oculto" style="display: none;">
-              <h1>Programa de computadora</h1>
-              <p>Son instrucciones que se le dan a una computadora para que las ejecute.</p>
+          
+          <div class="modal-body">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3" src="images/competencias%20transversales.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Competencias transversales</h5>
+                          Son un conjunto de competencias clave que sirven para una profesión, tanto sean conocimientos, aplicación de esos conocimientos y destrezas, relacionamiento interpersonal y aprendizajes cotidianos.
+                    </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="images/competencias%20y%20habilidades.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Competencias y habilidades</h5>
+                          <u>Competencia:</u> Es la capacidad de una persona, en la misma influyen las habilidades, conocimientos, valores y enseñanzas adquiridas a lo largo de la vida.
+                          <br><br>
+                          <u>Habilidad:</u> Es la facilidad que tenemos para aprender o hacer algo.
+                    </div>
+              </li>
+              <li class="media">
+                <img class="mr-3" src="images/competencias%20necesarias.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Competencias necesarias</h5>
+                          <u>Estudio:</u> La formación nos da la posibilidad de incrementar nuestros conocimientos y poder expandir nuestro campo laboral.    <br><br>
+                          <u>Constancia:</u> Ser constantes en nuestra objetivo, sea laboral o personal, la constancia nos llevará al éxito.<br><br>
+                          <u>Humildad:</u> No creerse más que los demás, siempre mantener un perfil bajo tanto en nuestro carácter como de nuestros conocimientos.<br><br>
+                          <u>Compañerismo:</u> Ayudar y permitir ser ayudado por tu grupo de trabajo, es la mejor forma de crecer personalmente y laboralmente.<br><br>
+                          <u>Motivación:</u> Siempre estar motivado con lo que uno realiza, la desmotivación podría llegarnos a hacer perder el interés en lo que hacemos.<br><br>
+                          <u>Compromiso:</u> Si aceptamos una tarea o reto, no abandonarla, continuar hasta finalizarla.<br><br>
+                          <u>Respeto:</u> La base fundamental en todo lo que hagamos en nuestra vida, el respeto hacia los demás hará que los demás sigan esta consigna con nosotros y mantengamos la cordialidad.
+                    </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="images/vocacion.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Vocación</h5>
+                          La vocación es eso que nos resulta inspirador y queremos realizar. Implica en descubrir el camino hacia dónde quiero ir, en este caso la profesión que quiero seguir. Mi vocación la estoy construyendo en la base de lo que me gusta que es la informática y a medida que me voy capacitando voy descubriendo realmente el rumbo que quiero seguir.
+                    </div>
+              </li>
+            </ul>
           </div>
-      <div id="algoritmo" class="textoconceptos oculto" style="display: none;">
-              <h1>Algoritmo</h1>
-              <p>Son instrucciones que se siguen para resolver un problema.</p>
-          </div>
-      <div id="lengprogra" class="textoconceptos oculto" style="display: none;">
-              <h1>Lenguaje de programación</h1>
-              <p>Es un lenguaje creado con la capacidad de describir acciones y que una computadora lo pueda interpretar y ejecutar.</p>
-          </div>
-      <div id="lengaltonivel" class="textoconceptos oculto" style="display: none;">
-              <h1>Lenguaje de alto nivel</h1>
-              <p>Este tipo de lenguaje se acerca al lenguaje humano, la computadora debe traducirlo a un lenguaje de bajo nivel. Algunos lenguajes de alto nivel son JavaScript, PHP, SQL, etc.</p>
+        </div>
       </div>
-      <div id="lengbajonivel" class="textoconceptos oculto" style="display: none;">
-              <h1>Lenguaje de bajo nivel</h1>
-              <p>Este tipo de lenguaje se acerca a la computadora, es más difícil para aprenderlo y corregir errores.</p>
+    </div>
+          </div>
+          
+        </div>
+</div>
+
+
+    <div id="busquedaLaboral" class="container-fluid">
+      <h1>Búsqueda Laboral</h1>
+
+  
+   
+        <div id="textoLaboral" class="row">
+         <div class="container-fluid">
+          <p>Los avisos laborales se componen en distintas secciones, lo cual facilita la lectura a la persona que está buscando trabajo. <br>
+
+             Comenzamos por los lugares donde podemos ubicar estos avisos, los mismos pueden ser publicados en Páginas Web, Diarios, Consultoras, Carteleras en instituciones educativas, trabajos, etc., Llamados y Bolsas de trabajo. <br><br>
+
+             Dichos avisos, en su estructura se componen en:
+             <ul>
+                 <li>
+                     El nombre de la empresa o consultora: Muchas veces no es la empresa directamente quién realiza el aviso, sino una consultora que se encarga de reclutar al     personal. Por este motivo muchas veces puede figurar o no el nombre de la empresa que requiere el personal.
+                 </li>
+                 <li>
+                     Ubicación: La ubicación donde será el puesto a ocupar.
+                 </li>
+                 <li>
+                     Descripción del trabajo: Encontramos los conocimientos, la experiencia, habilidades y horario que solicita el empleador para poder cubrir el cargo.  En algunos casos también encontramos el salario que ofrece el empleador, en otras ocasiones el empleador solicita la aspiración salarial del candidato.
+                 </li>
+                 <li>
+                     Envío de cv: Dependiendo el medio dónde se publicó es la información que contendrá para poder enviar el cv, normalmente en los sitios web uno se registra con todos sus datos y directamente se postula en el aviso. En diarios, carteleras y demás se estila a usar una dirección de mail de recepción de los cv, pero también puede ser una dirección física donde enviar el cv personalmente.
+                 </li>
+             </ul>    
+            </p>
+            <div>
+            <a href="images/desarrollador-web.png" target="_blank" class="">
+              <img class="mx-auto d-block" style="width: 50%;" id="imgLaboral" id="imgLaboral" src="images/desarrollador-web.png" alt="Aviso de Trabajo" title="Haga click para ver en tamaño completo">
+          </a>
+          </div>
+        </div>
       </div>
-      <div id="html" class="textoconceptos oculto" style="display: none;">
-              <h1>HTML</h1>
-              <p>Son una serie de etiquetas utilizadas para crear una página web.</p>
-      </div>
-      <div id="css" class="textoconceptos oculto" style="display: none;">
-              <h1>CSS</h1>
-              <p>Son una serie de etiquetas utilizadas para darle forma, color y efectos a una página web.</p>
-      </div>
-      <div id="javascript" class="textoconceptos oculto" style="display: none;">
-              <h1>JavaScript</h1>
-              <p>Es un lenguaje de programación que se usa para darle funcionalidad a la página web.</p>
       </div>
     
-      
-      
-     <div id="competencias" style="display:none;">
-      <div id="conceptcomp1">
-      <ul class="conceptos">
-              <li>
-                  <input class="conceptosbtns" type="button" value="Competencias transversales" style="font-size:15px;" onclick="aparece10()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Competencias y habilidades" style="font-size:15px;" onclick="aparece11()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Competencias necesarias" style="font-size:15px;" onclick="aparece12()">
-              </li>
-              <li>
-                  <input class="conceptosbtns" type="button" value="Vocación" style="font-size:15px;" onclick="aparece13()">
-              </li>
-          </ul>
-        </div>
-      <!-- Si se agregan más botones, hacer deslizante y agregar esta barra de botones
-          <div id="conceptcomp2" class="concepts"></div>
-      -->
-     </div>
-      <div id="compconcpt1" class="textoconceptos" style="display: none;">
-              <h1>Competencias transversales</h1>
-              <p>Son un conjunto de competencias clave que sirven para una profesión, tanto sean conocimientos, aplicación de esos conocimientos y destrezas, relacionamiento interpersonal y aprendizajes cotidianos.
-              </p>
-      </div>
-      <div id="compconcpt2" class="textoconceptos" style="display: none">
-              <h1>Competencias y habilidades</h1>
-              <p>Competencia: Es la capacidad de una persona, en la misma influyen las habilidades, conocimientos, valores y enseñanzas adquiridas a lo largo de la vida.
-              <br><br>
-              Habilidad: Es la facilidad que tenemos para aprender o hacer algo.
-              </p>
-      </div>
-      <div id="compconcpt3" class="textoconceptos" style="display: none;">
-              <h1>Competencias necesarias</h1>
-              <p><u>Estudio:</u> La formación nos da la posibilidad de incrementar nuestros conocimientos y poder expandir nuestro campo laboral.    <br>
-              <u>Constancia:</u> Ser constantes en nuestra objetivo, sea laboral o personal, la constancia nos llevará al éxito.<br>
-              <u>Humildad:</u> No creerse más que los demás, siempre mantener un perfil bajo tanto en nuestro carácter como de nuestros conocimientos.<br>
-              <u>Compañerismo:</u> Ayudar y permitir ser ayudado por tu grupo de trabajo, es la mejor forma de crecer personalmente y laboralmente.<br>
-              <u>Motivación:</u> Siempre estar motivado con lo que uno realiza, la desmotivación podría llegarnos a hacer perder el interés en lo que hacemos.<br>
-              <u>Compromiso:</u> Si aceptamos una tarea o reto, no abandonarla, continuar hasta finalizarla.<br>
-              <u>Respeto:</u> La base fundamental en todo lo que hagamos en nuestra vida, el respeto hacia los demás hará que los demás sigan esta consigna con nosotros y mantengamos la cordialidad.
-              </p>
-      </div>
-      <div id="compconcpt4" class="textoconceptos" style="display: none">
-              <h1>Vocación</h1>
-              <p>La vocación es eso que nos resulta inspirador y queremos realizar. Implica en descubrir el camino hacia dónde quiero ir, en este caso la profesión que quiero seguir. Mi vocación la estoy construyendo en la base de lo que me gusta que es la informática y a medida que me voy capacitando voy descubriendo realmente el rumbo que quiero seguir. 
-              </p>
-      </div>
-</div>
+      <footer id="contacto" class="footer text-xs-center">
+          <div class="container-fluid d-flex justify-content-center">
+              <a href="https://bbiurra.github.io/PaginaFinal/" title="Ir a mi página en GitHub" class="text-xs-center">
+                    <img src="images/github2.png" style="width:75px; height: 35px; margin-right: 10px;" alt="GitHub">
+              </a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#secContacto">
+                Contacto
+                </button>
 
-
-<div id="busquedaLaboral" class="container-fluid">
-  <h1>Búsqueda Laboral</h1>
-  <a href="images/desarrollador-web.png" target="_blank">
-      <img src="images/desarrollador-web.png" alt="Aviso de Trabajo" title="Haga click para ver en tamaño completo" width="35%" style="float: left; margin: 15px;">
-  </a>
-  <div id="textoLaboral">
-      <p >Los avisos laborales se componen en distintas secciones, lo cual facilita la lectura a la persona que está buscando trabajo. <br>
-
-         Comenzamos por los lugares donde podemos ubicar estos avisos, los mismos pueden ser publicados en Páginas Web, Diarios, Consultoras, Carteleras en instituciones educativas, trabajos, etc., Llamados y Bolsas de trabajo. <br><br>
-
-         Dichos avisos, en su estructura se componen en:
-         <ul>
-             <li>
-                 El nombre de la empresa o consultora: Muchas veces no es la empresa directamente quién realiza el aviso, sino una consultora que se encarga de reclutar al personal. Por este motivo muchas veces puede figurar o no el nombre de la empresa que requiere el personal.
-             </li>
-             <li>
-                 Ubicación: La ubicación donde será el puesto a ocupar.
-             </li>
-             <li>
-                 Descripción del trabajo: Encontramos los conocimientos, la experiencia, habilidades y horario que solicita el empleador para poder cubrir el cargo.  En algunos casos también encontramos el salario que ofrece el empleador, en otras ocasiones el empleador solicita la aspiración salarial del candidato.
-             </li>
-             <li>
-                 Envío de cv: Dependiendo el medio dónde se publicó es la información que contendrá para poder enviar el cv, normalmente en los sitios web uno se registra con todos sus datos y directamente se postula en el aviso. En diarios, carteleras y demás se estila a usar una dirección de mail de recepción de los cv, pero también puede ser una dirección física donde enviar el cv personalmente.
-             </li>
-         </ul>    
-    </p>
-        
-    </div>
-</div>
+              <!-- Modal -->
+                <div class="modal fade" id="secContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      
+                          <div class="container">
+                            <div class="row modal-body">
+                                <div class="col-md-12">
+                                    <div class="well well-sm">
+                                        <form class="form-horizontal" action="https://formspree.io/bbm0390@hotmail.com" method="POST">
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                                    <div class="col-md-8">
+                                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                                    <div class="col-md-8">
+                                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                                    <div class="col-md-8">
+                                                        <input id="email" name="email" type="text" placeholder="Dirección de E-mail" class="form-control">
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                                    <div class="col-md-8">
+                                                        <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="form-group">
+                                
+                                                    <div class="col-md-8">
+                                                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje aquí." rows="7"></textarea>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <div class="col-md-12 text-center">
+                                                        <button type="submit" class="btn btn-primary btn-lg" value="Send">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                      
+                      
+                    </div>
+                </div>
+          </div>
+      </footer>
+   
 <!--
 <div id="otros" class="container-fluid" style="display:none;">
   <h1>Section 4 Submenu 2</h1>
@@ -435,13 +690,20 @@
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
--->    
-    
-<script src="js/scripts.js"></script>    
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+-->       
+  
+ 
 
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+         
+      
+    </script>
     
-    </body>
+  </body>
 </html>

@@ -1,47 +1,39 @@
 body {
       position: relative; 
   }
-  #jumbo {
-      padding-top:50px;
-      height:600px;
-      margin-top: 55px;
-      width: 100%;
-      color: black;
-      background-color: white;
-}
   
   #imagenes {
-      padding-top:50px;
-      height:800px; 
+      padding-top:50px; 
       width: 100%; 
       color: white; 
       background-color: black;
+      padding-bottom: 50px;
 }
   #informacion {
       padding-top:50px;
-      height:800px; 
+      padding-bottom: 50px;
       width: 100%; 
       color: black; 
       background-color: white;
 }
 
   #entrevistas {
-    padding-top:50px;
-      height:800px; 
+      padding-top:50px; 
       width: 100%; 
       color: white; 
       background-color: black;
+      padding-bottom: 50px;
 }
   #conceptos {
       padding-top:50px;
-      height:800px; 
+      padding-bottom: 50px; 
       width: 100%; 
       color: black; 
       background-color: white;
 }
   #busquedaLaboral {
       padding-top:50px;
-      height:800px; 
+      margin-bottom: 10px;
       width: 100%; 
       color: white; 
       background-color: black;
@@ -68,42 +60,9 @@ body {
     background-color: rgba 0 0 0 0.5;
 }*/
 
-.jumbotron {
-    background: rgba (255, 55, 255, 0.5);
-}
 
 .imgcarro {
     border-radius: 100px;
-}
-
-#texto1 {
-    margin: 5%;
-    margin-top: 2%;
-    font-size: 24px;
-    border: 4px solid white;
-    padding: 10px;
-}
-
-#texto2 {
-    margin: 5%;
-    margin-top: 2%;
-    font-size: 24px;
-    border: 4px solid white;
-    padding: 10px;
-}
-#texto3 {
-    margin: 5%;
-    margin-top: 2%;
-    font-size: 24px;
-    border: 4px solid white;
-    padding: 10px;
-}
-#texto4 {
-    margin: 5%;
-    margin-top: 2%;
-    font-size: 24px;
-    border: 4px solid white;
-    padding: 10px;
 }
 
 .barrabtns {
@@ -134,15 +93,6 @@ body {
               border-color 0.3s ease-in;
 }
 
-#btndesa, #btncomp {
-    width: 250px;
-}
-#btndesa:hover, #btndesa:active, #btncomp:hover, #btncomp:active {
-    background-color: black; /*fallback*/
-    background-color: rgba (0, 0, 0, 0.4);
-    color: white;
-}
-
 #btncv{
   width: 200px;
   border-radius: 15px;
@@ -166,96 +116,19 @@ body {
     color: white;
 }
 
-#web {
-    margin-top: 15px;
-    width: 100%;
-}
-
-#conceptweb1 {
-    width: 20%;
-    float: left;
-}
-.conceptos {
-    list-style:none;
-    width: 100%;
-    border: solid 3px;
-    border-radius: 8px;
-    
-}
-.conceptos li {
-    margin: 20px 5px 20px 5px;
-}
-
-.conceptosbtns {
-    height: 35px;
-    border-radius: 15px;
-    margin-right: 5px;
-    padding: 0px 0px 15px 0px;
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: black;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: background-color 0.2s ease-out,
-              border-color 0.2s ease-out;
-}
-
-.coneptosbtns input:hover, input:active, button:hover, button:active {
-    background-color: black; /*fallback*/
-    background-color: rgba (0, 0, 0, 0.4);
-    color: white;
-    
-}
-
 .textoconceptos {
     float: left;
     margin-left: 20px;
     border: solid 3px;
     border-radius: 8px;
     width: 78%;
-    height: 578px;
 }
-/*
-.textoconceptos.oculto{
-    display:none;
-}
-
-.textoconceptos.visible{
-    display:block;
-}*/
 
 .textoconceptos h1, p {
     text-align: center;
     padding: 30px;
 }
 
-.textoconceptos h1{
-        font-size: 70px;
-        text-decoration-line: underline
-}
-
-.textoconceptos p{
-    font-size: 40px;
-    margin-top: 40px;
-}
-
-#competencias {
-    margin-top: 15px;
-    width: 100%;
-}
-#conceptcomp1 {
-    width: 20%;
-    float: right;
-}
-#compconcpt3 p{
-    font-size: 20px;
-}
-#compconcpt4 p{
-    font-size: 32px;
-}
 
 #textoinfo p{
     font-size: 18px;
@@ -266,40 +139,98 @@ body {
     border: solid 3px;
     border-radius: 8px;
     width: 80%;
-    height: 400px;
 }
-
+#busquedaLaboral{
+    width: 100%;
+    padding: 15px;
+}
 #busquedaLaboral h1{
     width: 100%;
     text-align: center;
 }
+#busquedaLaboral a{
+    margin-left: 0px;
+    width: 40%;
+}
+#fotoLaboral{
+    margin-left: 15px;
+    width: 50%;
+}
+#fotoLaboral img{
+    width: 50%;
+}
 #textoLaboral {
-     margin-right: 5%;
-    margin-top: 1%;
+    margin: 10px 5px 15px 5px;
     border: solid 3px;
     border-color: white;
     border-radius: 8px;
-    width: 50%;
-    height: 87%;
-    float: right;
-    padding: 0px 30px 0px 0px;
+    width: 100%;
+    padding: 0px 30px 30px 30px;
+    overflow: hidden;
 }
 #textoLaboral li{ 
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0px 15px 0px;
 }
 
+.jumbotron{
+          position: relative;
+          z-index: 0;
+          background-color: #FFFFFF;
+          overflow: hidden;
+          margin-top: 50px;
+          margin-bottom: 0;
+          height: 800px;
+      }
 #video-background { 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden; 
-  width:100%;
-  z-index: -100;
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         overflow: hidden;
+         z-index: -1;
+         width:100%;
+       }
+      
+.textjumbo{
+          background-color: #FFFFFF;
+          opacity: 0.8;
+          padding: 3px;
+          width: 40%;  
+          border-radius: 50px;
+          margin-top: 5%;
+      }
+            
+#barranav{
+          width: 100%;
+          z-index: 2;
+      }
+
+
+.card-title{
+    color: black;
 }
-.jumbotron {
-    z-index: -101;
-    position: relative;
-    overflow: hidden;
+.card-text{
+    color: black;
+    margin-bottom: 0;
+}
+
+.modal-content{
+    color: black;
+}
+
+#pie{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+.footer{
+    color: white;
+    background: #222222;
+    margin: 0px;
+    padding: 10px;
+}
+.footer img{
+    
 }
